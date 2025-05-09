@@ -52,6 +52,11 @@ const VideoCard: React.FC<VideoCardProps> = ({
         <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
           {videoInfo.duration}
         </div>
+        {videoInfo.highestQuality && (
+          <div className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+            Up to {videoInfo.highestQuality}
+          </div>
+        )}
       </div>
 
       <div className="p-4 space-y-4">

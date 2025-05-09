@@ -7,6 +7,7 @@ export interface VideoInfo {
   author: string;
   formats: VideoFormat[];
   isLoading?: boolean;
+  highestQuality?: string;
 }
 
 export interface VideoFormat {
